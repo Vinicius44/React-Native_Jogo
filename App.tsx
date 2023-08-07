@@ -3,9 +3,11 @@ import {View, Text, TouchableOpacity} from "react-native";
 import {styles} from "./styles";
 import {Ball} from "./components/Ball/index"
 
+let timer: number;
+
 const App = () =>{
 
-  let timer: number;
+  
 
   const [gravity, setGravity] = useState(0.98);
   const [upForce, setUpForce] = useState(0);
